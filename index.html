@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Movies Overflow</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-item logo" id="logoIcon">
+            <h2 style="color: black;">Movies Overflow</h2>
+        </div>
+        <div class="nav-item">
+            <input class="search-bar" placeholder="Search..." id="inputSearch" />
+            <button class="search-bar"><i class="fa fa-search" id="btnSearch"></i></button>
+        </div>
+    </nav>
+
+    <div class="collection-container">
+        <div class="collection-header">
+            <h3>Recommended Movies</h3>
+            <div class="collection-controls">
+                <span>page:</span>
+                <span id="elementPageNumber"></span>
+                <span class="control-icon" id="btnLeft">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                </span>
+                <span class="control-icon" id="btnRight">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </span>
+                <span class="control-icon" id="btnList">
+                    <i class="fa fa-list" id="iconList"></i>
+                </span>
+                <span class="control-icon" id="btnGrid">
+                    <i class="fa fa-th-large" id="iconGrid"></i>
+                </span>
+            </div>
+        </div>
+        
+        <div class="collection-body" id="moviesCollection">
+            no movies...
+        </div>
+
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" id="btnCloseModal">
+                <i class="fa fa-close"></i>
+            </span>
+            <div class="modal-body" id="modalBody">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="public/js/main.js"></script>
+</body>
+</html>
